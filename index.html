@@ -11,7 +11,7 @@
   <meta name="keywords"
         content="EcoFitSip, TeaShop, Heilbronn, sustainable tea, herbal infusion, green tea">
   
-  <!-- Structured Data for LocalBusiness -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -26,16 +26,19 @@
     }
   }
   </script>
-  
-  <!-- Instant Redirect (after 2 seconds) -->
-  <meta http-equiv="refresh" content="2;url=https://kkuhn1994.github.io/TeaShop/">
-  <!-- Or use JS redirect instead:
-  <script>window.location.replace("https://kkuhn1994.github.io/TeaShop/");</script>
-  -->
 </head>
 <body>
   <h1>Welcome to EcoFitSip TeaShop</h1>
-  <p>Redirecting you to our full app in a moment…</p>
-  <p>If you are not redirected automatically, <a href="https://kkuhn1994.github.io/TeaShop/">click here</a>.</p>
+  <p>We’re redirecting you to our full Flutter app in a moment…</p>
+
+  <script>
+    // Redirect real browsers after a short pause
+    setTimeout(() => {
+      window.location.replace("https://kkuhn1994.github.io/TeaShop/");
+    }, 5000); // 5 seconds
+  </script>
+  <noscript>
+    <p>If you are not redirected automatically, <a href="https://kkuhn1994.github.io/TeaShop/">click here</a>.</p>
+  </noscript>
 </body>
 </html>
